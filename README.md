@@ -5,7 +5,7 @@ Init array:
 ```
 int array[] = { 1, 2, 3, 4, 5 };
 ```
-Note that it's not possible to initialize an array after the declaration using this approach. An attempt to do so will result in a compilation error.
+Note: It's not possible to initialize an array after the declaration using this approach. An attempt to do so will result in a compilation error.
 
 Init 2d array:
 ```
