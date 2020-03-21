@@ -25,5 +25,15 @@ Init List:
 ```
 List<String> strings = Arrays.asList("foo", "bar", "baz");
 ```
+<hr>
+## java map: 
+foreach: 
+```
+Map<String, String> map = ...
+for (Map.Entry<String, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+```
+
 
 
