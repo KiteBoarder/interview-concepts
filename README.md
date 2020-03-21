@@ -25,7 +25,7 @@ Init List:
 ```
 List<String> strings = Arrays.asList("foo", "bar", "baz");
 ```
-<hr>
+<hr/>
 ## java map: 
 foreach: 
 ```
