@@ -21,3 +21,9 @@ String[][] names = {
                     {"James", "Gosling"}, 
                    };
 ```
+Init List: 
+```
+List<String> strings = Arrays.asList("foo", "bar", "baz");
+```
+
+
