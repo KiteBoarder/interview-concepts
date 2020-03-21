@@ -26,6 +26,7 @@ Init List:
 List<String> strings = Arrays.asList("foo", "bar", "baz");
 ```
 <hr/>
+
 ## java map: 
 foreach: 
 ```
