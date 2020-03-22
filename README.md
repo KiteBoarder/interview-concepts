@@ -36,5 +36,16 @@ for (Map.Entry<String, String> entry : map.entrySet()) {
 }
 ```
 
+<hr/>
+
+## Greedy 
+### Intervals
+
+Given a collection of intervals, find the maximum number of intersecting intervals. The intervals are inclusive  
+Input: (1,100), (2,3), (5, 10), (6,12)  
+Output: 3  
+Input: (2,5), (3,6), (8,10),(9,12),(12,20)  
+Output: 2
+
 
 
