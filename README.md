@@ -47,5 +47,5 @@ Output: 3
 Input: (2,5), (3,6), (8,10),(9,12),(12,20)  
 Output: 2
 
-[Solution ](../blob/master/MaxIntersectingIntervals.java)
+[Solution ](./master/MaxIntersectingIntervals.java)
 
