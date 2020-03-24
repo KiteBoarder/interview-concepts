@@ -36,6 +36,7 @@ int[] chars = new int[26]; //count all letters
             chars[c - 'a']++;
         }
 ```
+Also has an example of counting characters using character counter.   
 
 ## java map: 
 foreach: 
