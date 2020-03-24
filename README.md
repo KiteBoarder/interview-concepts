@@ -1,4 +1,4 @@
-# interview-concepts
+  # interview-concepts
 
 # Java: 
 Init array: 
@@ -26,6 +26,16 @@ Init List:
 List<String> strings = Arrays.asList("foo", "bar", "baz");
 ```
 <hr/>
+
+## String: 
+
+### Iterate over string characters: 
+```
+int[] chars = new int[26]; //count all letters
+        for (char c : text.toCharArray()) {
+            chars[c - 'a']++;
+        }
+```
 
 ## java map: 
 foreach: 
