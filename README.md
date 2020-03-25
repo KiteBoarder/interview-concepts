@@ -60,3 +60,14 @@ Output: 2
 
 [Solution ](./MaxIntersectingIntervals.java)
 
+<hr/>
+
+## Sorting
+
+### quick select 
+quick select has average complexity of O(n), regardless of K.  
+Quick select: find the Kth smallest or largest element.   
+Find median: can be done via quick select in linear time.  
+
+
+
