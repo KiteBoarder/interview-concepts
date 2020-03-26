@@ -34,6 +34,16 @@ Output: [John, Mary, Bob]
 Map, List can be printed directly: System.out.println(list); 
 <hr/>
 
+### Exception: 
+```
+throw new Exception("test");
+```
+Also add this to function: throws Exception 
+```
+public void func() throws Exception
+```
+
+
 ## String: 
 
 ### Iterate over string characters: 
