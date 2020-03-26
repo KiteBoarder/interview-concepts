@@ -25,6 +25,13 @@ Init List:
 ```
 List<String> strings = Arrays.asList("foo", "bar", "baz");
 ```
+### print array: 
+```
+String[] array = new String[] {"John", "Mary", "Bob"};
+System.out.println(Arrays.toString(array));
+Output: [John, Mary, Bob]
+```
+Map, List can be printed directly: System.out.println(list); 
 <hr/>
 
 ## String: 
