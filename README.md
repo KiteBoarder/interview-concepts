@@ -1,4 +1,6 @@
   # interview-concepts
+### todo: combination, trie, permutation, powerset
+
 
 # Java: 
 Init array: 
