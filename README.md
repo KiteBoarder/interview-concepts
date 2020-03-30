@@ -66,6 +66,19 @@ for (Map.Entry<String, String> entry : map.entrySet()) {
 }
 ```
 
+arrays can be put as map keys (leetcode 436 - find-right-interval), but lookup only works for the same object ref, not for the objects with same value: 
+```
+public int[] findRightInterval(int[][] intervals) {
+        Map<int[], Integer> map = new HashMap(); 
+        int[] result = new int[intervals.length]; 
+        for (int i = 0; i < intervals.length; i++){
+            map.put(intervals[i], i);
+        }...
+```
+For objects with same value, use List instead. The hashcode for the List depends on its objects, not the List itself. 
+More info: https://stackoverflow.com/a/15576112/3769451
+
+
 <hr/>
 
 ## Greedy 
