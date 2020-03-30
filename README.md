@@ -67,7 +67,7 @@ for (Map.Entry<String, String> entry : map.entrySet()) {
 ```
 
 #### Arrays as keys
-arrays can be put as map keys ([leetcode 436 - find-right-interval](https://leetcode.com/problems/find-right-interval/submissions/)), but lookup only works for the same object ref, not for the objects with same value: 
+arrays can be put as map keys ([leetcode 436 - find-right-interval](https://leetcode.com/problems/find-right-interval)), but lookup only works for the same object ref, not for the objects with same value: 
 ```
 public int[] findRightInterval(int[][] intervals) {
         Map<int[], Integer> map = new HashMap(); 
