@@ -58,7 +58,7 @@ int[] chars = new int[26]; //count all letters
 Also has an example of counting characters using character counter.   
 
 ## java map: 
-foreach: 
+#### foreach: 
 ```
 Map<String, String> map = ...
 for (Map.Entry<String, String> entry : map.entrySet()) {
@@ -66,6 +66,7 @@ for (Map.Entry<String, String> entry : map.entrySet()) {
 }
 ```
 
+#### Arrays as keys
 arrays can be put as map keys (leetcode 436 - find-right-interval), but lookup only works for the same object ref, not for the objects with same value: 
 ```
 public int[] findRightInterval(int[][] intervals) {
