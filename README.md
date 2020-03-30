@@ -71,7 +71,6 @@ arrays can be put as map keys (leetcode 436 - find-right-interval), but lookup o
 ```
 public int[] findRightInterval(int[][] intervals) {
         Map<int[], Integer> map = new HashMap(); 
-        int[] result = new int[intervals.length]; 
         for (int i = 0; i < intervals.length; i++){
             map.put(intervals[i], i);
         }...
