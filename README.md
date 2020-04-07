@@ -34,6 +34,12 @@ System.out.println(Arrays.toString(array));
 Output: [John, Mary, Bob]
 ```
 Map, List can be printed directly: System.out.println(list); 
+
+### reverse List:
+```
+Collections.reverse(list); 
+```
+
 <hr/>
 
 ### Exception: 
