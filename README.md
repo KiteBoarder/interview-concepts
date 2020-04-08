@@ -110,7 +110,7 @@ Find median: can be done via quick select in linear time.
 ## Tree: 
 
 ### serialization: 
-pre order or level order, both with null values. 
+pre order or level order, both with null values.   
 pre order cons: using stack, stack normally gets consumed faster than heap.   
 Level order is with queue, memory coming from heap so it has more memory available.  
 
