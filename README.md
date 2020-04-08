@@ -1,5 +1,5 @@
   # interview-concepts
-### todo: combination, trie, permutation, powerset
+### todo: combination, trie, permutation, powerset, quicksort (functions from clr), mergesort, s notes, my notes
 
 
 # Java: 
@@ -107,5 +107,38 @@ quick select has average complexity of O(n), regardless of K.
 Quick select: find the Kth smallest or largest element.   
 Find median: can be done via quick select in linear time.  
 
+## LinkedList
+doubly linked list with a dummy head, tail. This way we add, remove nodes between two dummy nodes, but never worry about head, tail being null. 
+``` 
+Node head = new Node(); 
+Node tail = new Node(); 
+head.next = tail; 
+tail.prev = head; 
 
+public void add(Node node){
+  node.next = head.next;
+  head.next.prev = node; 
+  head.next = node; 
+}
+public void remove(Node node){
+  Node next = node.next;
+  Node prev = node.prev; 
+  prev.next = next; 
+  next.prev = prev; 
+}
+```
+
+
+## LRU Cache:
+Data structures: Doubly linked list, Map<key, Node>.  
+Doubly linked list has head, tail.  
+```
+class Node{
+  int key, 
+  int value, 
+  Node next; 
+  Node prev; 
+}
+```
+leetcode problem: https://leetcode.com/problems/lru-cache/
 
