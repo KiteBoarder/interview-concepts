@@ -107,6 +107,13 @@ quick select has average complexity of O(n), regardless of K.
 Quick select: find the Kth smallest or largest element.   
 Find median: can be done via quick select in linear time.  
 
+## Tree: 
+
+### serialization: 
+pre order or level order, both with null values. 
+pre order cons: using stack, stack normally gets consumed faster than heap.   
+Level order is with queue, memory coming from heap so it has more memory available.  
+
 ## LinkedList
 doubly linked list with a dummy head, tail. This way we add, remove nodes between two dummy nodes, but never worry about head, tail being null. 
 ``` 
