@@ -123,6 +123,7 @@ More info: https://stackoverflow.com/a/15576112/3769451
 ## Greedy 
 ### Intervals
 
+### Max intersecting intervals
 Given a collection of intervals, find the maximum number of intersecting intervals. The intervals are inclusive  
 Input: (1,100), (2,3), (5, 10), (6,12)  
 Output: 3  
@@ -130,6 +131,10 @@ Input: (2,5), (3,6), (8,10),(9,12),(12,20)
 Output: 2
 
 [Solution ](./MaxIntersectingIntervals.java)
+
+### Maximal Disjoint Intervals
+[Complete question] (https://www.geeksforgeeks.org/maximal-disjoint-intervals/)  
+Choose lowest end points: Sort by end point, iterate and pick compatible intervals.   
 
 <hr/>
 
