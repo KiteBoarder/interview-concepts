@@ -195,4 +195,5 @@ Another intuition: tail of the window is at point K - 1. From K-1 to N-1 (last e
 ## DP
 ### LIS:
 good link for explanation of O(nlog(n)):  
-https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/
+https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/  
+https://leetcode.com/articles/longest-increasing-subsequence/
