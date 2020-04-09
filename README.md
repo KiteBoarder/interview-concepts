@@ -41,6 +41,7 @@ Collections.reverse(list);
 ```
 ### reverse array:
 ```
+ // method 1: using collections. However this is not possible for raw types. 
   public static void reverse() { 
     String[] arr = {“a”, “b”, “c”}; 
     System.out.println("array before reverse: " + Arrays.toString(arr) ); 
