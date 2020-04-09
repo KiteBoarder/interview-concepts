@@ -39,6 +39,19 @@ Map, List can be printed directly: System.out.println(list);
 ```
 Collections.reverse(list); 
 ```
+### reverse array:
+```
+  public static void reverse() { 
+    String[] arr = {“a”, “b”, “c”}; 
+    System.out.println("array before reverse: " + Arrays.toString(arr) ); 
+    List<String> list = Arrays.asList(arr); 
+    Collections.reverse(list); 
+    String[] reversed = list.toArray(arr); 
+    System.out.println("array after reverse: " + Arrays.toString(reversed) ); 
+  } 
+
+```
+
 
 ### binary search:
 Arrays.binarySearch. 
