@@ -131,6 +131,13 @@ both are interface.
 Queue<E> q = new LinkedList<>(); 
 Deque<E> dq = new LinkedList<>();   
 ```
+Queue methods:  
+throw exception: add, remove, element 
+return special value: offer (boolean for capacity violation), poll(return null if empty), peek (return null if empty) 
+
+Deque methods:
+throw exception: addFirst, removeFirst, getFirst, addLast, removeLasat, getLast  
+Special value: offerFirst, pollFirst, peekFirst, offerLast, pollLast, peekLast   
 
 <hr/>
 ## String: 
