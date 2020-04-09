@@ -154,7 +154,7 @@ leetcode problem: https://leetcode.com/problems/lru-cache/
 min/max possible via min Queue, or via dp.   
 DP: For sliding window of size k divide the array into chunks of Ks. for each chunk calculate the min (or max) up to that element once from left, once from right. Min of sliding window can be easily calculated using these two extra arrays.  
   
-size of sliding window min/max: N-K+1.  
+size of sliding window min/max array: N-K+1.  
 Intuition: For window of size 1, we have N-1+1 elements.  
 For window of size N we have N-N+1 = 1 element.  
 Another intuition: tail of the window is at point K - 1. From K-1 to N-1 (last element of array), there are N-1 - K-1 + 1 = N-K+1 elements. 
