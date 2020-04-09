@@ -40,6 +40,20 @@ Map, List can be printed directly: System.out.println(list);
 Collections.reverse(list); 
 ```
 
+### binary search:
+Arrays.binarySearch. 
+```
+public static int binarySearch(int[] a,
+               int key)
+public static int binarySearch(int[] a,
+               int fromIndex, // inclusive
+               int toIndex, // exclusive
+               int key)
+
+```
+Returns:  
+index of the search key, if it is contained in the array within the specified range; otherwise, (-(insertion point) - 1). The insertion point is defined as the point at which the key would be inserted into the array: the index of the first element in the range greater than the key, or toIndex if all elements in the range are less than the specified key. Note that this guarantees that the return value will be >= 0 if and only if the key is found.
+
 <hr/>
 
 ### Exception: 
