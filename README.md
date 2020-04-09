@@ -93,6 +93,11 @@ public class Point
         Point otherPoint = (Point) other;
         return otherPoint.x == x && otherPoint.y == y;
     }
+    
+    // new method After Java 7 
+    @Override public int hashCode() {
+     return Objects.hash(x, y); // or similar hash(x, y, z) or any other fields.
+    }
 
     @Override
     public int hashCode() {
