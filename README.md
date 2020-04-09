@@ -125,6 +125,13 @@ Also add this to function: throws Exception
 public void func() throws Exception
 ```
 
+### Queue, Deque
+both are interface.  
+```
+Queue<E> q = new LinkedList<>(); 
+Deque<E> dq = new LinkedList<>();   
+```
+
 <hr/>
 ## String: 
 
