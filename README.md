@@ -192,4 +192,7 @@ Intuition: For window of size 1, we have N-1+1 elements.
 For window of size N we have N-N+1 = 1 element.  
 Another intuition: tail of the window is at point K - 1. From K-1 to N-1 (last element of array), there are N-1 - K-1 + 1 = N-K+1 elements. 
 
-
+## DP
+### LIS:
+good link for explanation of O(nlog(n)):  
+https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/
