@@ -139,6 +139,12 @@ Deque methods:
 throw exception: addFirst, removeFirst, getFirst, addLast, removeLasat, getLast  
 Special value: offerFirst, pollFirst, peekFirst, offerLast, pollLast, peekLast   
 
+Deque equivalent queue methods:
+add -> addLast, offer -> offerLast
+remove -> removeFirst, poll -> pollFirst
+peek -> peekFirst
+
+
 <hr/>
 ## String: 
 
