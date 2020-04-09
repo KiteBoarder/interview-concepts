@@ -75,6 +75,41 @@ index of the search key, if it is contained in the array within the specified ra
 
 <hr/>
 
+### hashcode, equal
+```
+public class Point 
+{
+    public int x, y;
+
+    @Override
+    public boolean equals(Object other) 
+    {
+        if (this == other)
+          return true;
+
+        if (!(other instanceof Point))
+          return false;
+
+        Point otherPoint = (Point) other;
+        return otherPoint.x == x && otherPoint.y == y;
+    }
+
+    @Override
+    public int hashCode() {
+      return 31 * x + y;
+    }
+}
+
+//another version:
+public int hashCode() {
+    int hash = 7;
+    hash = 71 * hash + this.x;
+    hash = 71 * hash + this.y;
+    return hash;
+}
+```
+[from this link stackoverflow](https://stackoverflow.com/a/9135980/3769451) 
+
 ### Exception: 
 ```
 throw new Exception("test");
@@ -84,7 +119,7 @@ Also add this to function: throws Exception
 public void func() throws Exception
 ```
 
-
+<hr/>
 ## String: 
 
 ### Iterate over string characters: 
