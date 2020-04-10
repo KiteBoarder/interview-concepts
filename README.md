@@ -301,7 +301,7 @@ public class MatrixPrint {
         int j = 0;
         while(i < m){
             printDiag(matrix, i, j);
-            if (j < n -1){
+            if (j < n - 1){
                 j++;
             } else{
                 i++;
