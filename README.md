@@ -263,3 +263,52 @@ Another intuition: tail of the window is at point K - 1. From K-1 to N-1 (last e
 good link for explanation of O(nlog(n)):  
 https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/  
 https://leetcode.com/articles/longest-increasing-subsequence/
+
+## Grids, matrix
+Print matrix diagonally: 
+```
+public class MatrixPrint {
+
+    static void printDiag(int[][] matrix, int row, int col){
+        String result = "";
+        int m = matrix.length;
+        int n = matrix[0].length;
+        while(row < m && col >= 0){
+            result += matrix[row][col] + " ";
+            row++;
+            col--;
+        }
+        System.out.println(result);
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+                            {1, 2, 3},
+                            {4, 5, 6},
+                            {7, 8, 9},
+                         };
+
+        int m = matrix.length;
+        int n = matrix[0].length;
+        // using min/max: 
+        for (int i = 0; i < m + n - 1; i++){
+            int row = Math.max(0, i - n + 1);
+            int col = Math.min(n-1, i);
+            printDiag(matrix, row, col);
+        }
+        // using while loop: 
+        int i = 0;
+        int j = 0;
+        while(i < m){
+            printDiag(matrix, i, j);
+            if (j < n -1){
+                j++;
+            } else{
+                i++;
+            }
+
+        }
+    }
+}
+```
+
