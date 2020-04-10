@@ -75,6 +75,13 @@ index of the search key, if it is contained in the array within the specified ra
 
 <hr/>
 
+### checked, unchecked exceptions: 
+Runtime Exceptions : Runtime exceptions are referring to as unchecked exceptions. All other exceptions are checked exceptions, and they don't derive from java.lang.RuntimeException.  
+
+Checked Exceptions : A checked exception must be caught somewhere in your code. If you invoke a method that throws a checked exception but you don't catch the checked exception somewhere, your code will not compile. That's why they're called checked exceptions : the compiler checks to make sure that they're handled or declared.  
+
+Example for unchecked exception: [java.util.NoSuchElementException](https://docs.oracle.com/javase/7/docs/api/java/util/NoSuchElementException.html) that is returned for [queue.remove()](https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html#remove())
+
 ### hashcode, equal
 ```
 public class Point 
@@ -143,6 +150,8 @@ Deque equivalent queue methods:
 add -> addLast, offer -> offerLast
 remove -> removeFirst, poll -> pollFirst
 peek -> peekFirst
+
+Queue exceptions are unchecked, no need for try catch or adding throws to function. 
 
 
 <hr/>
