@@ -320,4 +320,13 @@ public class MatrixPrint {
     }
 }
 ```
+There are 4 cases for traversing rows or columns:  
+- going up then flat: Max
+- flat then going up: Max
+- going downn then flat at 0: Min
+- flat then going down to 0: Min   
 
+Basically all cases getting to 0 ultimately are Min. All cases getting to somewhere not 0 are Max. 
+
+i sweeps between 0 and m+n-1. Last i is m + n - 2.  
+There are m rows and n cols, and one row and col is common between sweeps, so m + n - 1.  
