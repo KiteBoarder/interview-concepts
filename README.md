@@ -326,7 +326,7 @@ There are 4 cases for traversing rows or columns:
 - going downn then flat at 0: Min
 - flat then going down to 0: Min   
 
-Basically all cases getting to 0 ultimately are Min. All cases getting to somewhere not 0 are Max. 
+Min or Max? Consider the line and flat line, then see if we are choosing the min or max. [See this picture](http://sketchtoy.com/69161196). Flat line at 0 is Max. Flat line at m-1 (or n-1) is Min. 
 
 i sweeps between 0 and m+n-1. Last i is m + n - 2.  
 There are m rows and n cols, and one row and col is common between sweeps, so m + n - 1.  
