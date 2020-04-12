@@ -334,3 +334,7 @@ Min or Max? Consider the line and flat line, then see if we are choosing the min
 
 i sweeps between 0 and m+n-1. Last i is m + n - 2.  
 There are m rows and n cols, and one row and col is common between sweeps, so m + n - 1.  
+
+## Arrays:
+problems:
+[maxium ramp width](https://leetcode.com/problems/maximum-width-ramp) Soltion with min stack from start and sweeping from end. 
