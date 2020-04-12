@@ -337,4 +337,4 @@ There are m rows and n cols, and one row and col is common between sweeps, so m 
 
 ## Arrays:
 problems:  
-[maxium ramp width](https://leetcode.com/problems/maximum-width-ramp) Soltion with min stack from start and sweeping from end. 
+[maxium ramp width](https://leetcode.com/problems/maximum-width-ramp) Solution with min stack from start and sweeping from end. 
