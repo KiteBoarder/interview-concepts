@@ -35,6 +35,23 @@ Output: [John, Mary, Bob]
 ```
 Map, List can be printed directly: System.out.println(list); 
 
+### print 2D array:
+```
+System.out.println(Arrays.deepToString(array)
+                         .replace("],","\n").replace(",","\t| ")
+                         .replaceAll("[\\[\\]]", " "));
+```
+will print: 
+```
+1  |  2  |  3
+ 4  |  5  |  6
+ 7  |  8  |  9
+ 10 |  11 |  12
+ 13 |  15 |  15
+```
+
+
+
 ### reverse List:
 ```
 Collections.reverse(list); 
