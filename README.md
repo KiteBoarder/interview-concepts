@@ -1,5 +1,6 @@
   # interview-concepts
 ### todo: combination, trie, permutation, powerset, quicksort (functions from clr), mergesort, s notes, my notes
+### todo: create unchecked exception, iterator, iterable, comparator, priority queue(orders)
 
 
 # Java: 
