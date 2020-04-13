@@ -106,6 +106,15 @@ Throwing unchecked exception example:
 throw new RuntimeException("something wrong!"); 
 ```
 
+### Exception: 
+```
+throw new Exception("test");
+```
+Also add this to function: throws Exception 
+```
+public void func() throws Exception
+```
+
 ### hashcode, equal
 ```
 public class Point 
@@ -147,13 +156,14 @@ public int hashCode() {
 [from this link stackoverflow](https://stackoverflow.com/a/9135980/3769451)  
 [source for JDK 7+](https://mkyong.com/java/java-how-to-overrides-equals-and-hashcode/)
 
-### Exception: 
+### method references (Java 8): 
 ```
-throw new Exception("test");
+List<String> list = ...;
+list.replaceAll(String::toUpperCase);
 ```
-Also add this to function: throws Exception 
+to create a new list: 
 ```
-public void func() throws Exception
+List<String> upper = list.stream().map(String::toUpperCase).collect(Collectors.toList());
 ```
 
 ### Queue, Deque
