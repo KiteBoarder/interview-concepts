@@ -156,6 +156,9 @@ public int hashCode() {
 [from this link stackoverflow](https://stackoverflow.com/a/9135980/3769451)  
 [source for JDK 7+](https://mkyong.com/java/java-how-to-overrides-equals-and-hashcode/)
 
+### iterable, iterator: 
+
+
 ### method references (Java 8): 
 ```
 List<String> list = ...;
