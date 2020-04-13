@@ -206,6 +206,20 @@ For objects with same value, use List instead. The hashcode for the List depends
 More info: https://stackoverflow.com/a/15576112/3769451
 
 
+### Priority Queue: 
+Default is min priority Queue, basead on natural ordering. 
+```
+PriorityQueue<Integer> pq = new PriorityQueue<>(); 
+pq.add(1); 
+int min = pq.peek(); 
+min = pq.remove();
+```
+To create max priority queue: 
+```
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); 
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a); 
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a)); 
+```
 <hr/>
 
 ## Greedy 
