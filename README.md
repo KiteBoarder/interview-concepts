@@ -101,6 +101,11 @@ Checked Exceptions : A checked exception must be caught somewhere in your code. 
 
 Example for unchecked exception: [java.util.NoSuchElementException](https://docs.oracle.com/javase/7/docs/api/java/util/NoSuchElementException.html) that is returned for [queue.remove()](https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html#remove())
 
+Throwing unchecked exception example: 
+```
+throw new RuntimeException("something wrong!"); 
+```
+
 ### hashcode, equal
 ```
 public class Point 
