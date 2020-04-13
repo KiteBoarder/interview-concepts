@@ -214,7 +214,7 @@ pq.add(1);
 int min = pq.peek(); 
 min = pq.remove();
 ```
-To create max priority queue: 
+To create a max priority queue use one of these methods (In Java 8+): 
 ```
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); 
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a); 
