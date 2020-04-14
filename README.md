@@ -2,6 +2,7 @@
 ### todo: combination, trie, permutation, powerset, quicksort (functions from clr), mergesort, s notes, my notes
 ### todo: graph 4 different ways, dijkstra, A*, spanning tree
 ### todo: create unchecked exception, iterator, iterable, comparator, priority queue(orders)
+### todo: streams (Java 8)
 
 
 # Java: 
