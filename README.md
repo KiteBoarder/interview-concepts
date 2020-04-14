@@ -210,7 +210,7 @@ method: `int compare(T o1, T o2)`
 
 It also has many comparators such as: naturalOrder(), reverseOrder(). 
 
-### Collections.reverseOrder vs Comparator.reverseOrder(): 
+### Collections.reverseOrder() vs Comparator.reverseOrder(): 
 They are the same. 
 ```
      public static void main(String[] args) {
