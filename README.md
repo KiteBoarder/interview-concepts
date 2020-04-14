@@ -31,6 +31,11 @@ Init List:
 List<String> strings = Arrays.asList("foo", "bar", "baz");
 List<Integer> ints = Arrays.asList(1, 2, 3);
 ```
+Init immutable vs mutable:
+```
+List<Integer> list=Arrays.asList(1, 2, 3); // immutable list
+List<Integer> list=new ArrayList<>(Arrays.asList(1, 2, 3)); // mutable list
+```
 
 ### convert int[] to List\<Integers\>
 There is no direct way to make the conversion.  
