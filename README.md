@@ -36,7 +36,7 @@ Init immutable vs mutable:
 List<Integer> list=Arrays.asList(1, 2, 3); // immutable list (it's not mutable). List.of java 9 is immutable. See comment below
 List<Integer> list=new ArrayList<>(Arrays.asList(1, 2, 3)); // mutable list
 ```
-Actually Arrays.asList is not immutable. See (this post)[https://stackoverflow.com/a/46579348/3769451] in SO. 
+Actually Arrays.asList is not immutable. See [this post](https://stackoverflow.com/a/46579348/3769451) in SO. 
 
 ### convert int[] to List\<Integers\>
 There is no direct way to make the conversion.  
