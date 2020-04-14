@@ -32,11 +32,10 @@ List<String> strings = Arrays.asList("foo", "bar", "baz");
 List<Integer> ints = Arrays.asList(1, 2, 3);
 ```
 
-### convert int[] to List<Integers>
+### convert int[] to List\<Integers\>
 There is no direct way to make the conversion.  
 The best way is to use something like this:
 ```
-  
 List<Integer> list = Arrays.stream(arr)
                                 .boxed()        // Stream<Integer>
                                 .collect(Collectors.toList());  
