@@ -192,6 +192,7 @@ Queue exceptions are unchecked, no need for try catch or adding throws to functi
 
 
 <hr/>
+
 ## String: 
 
 ### Iterate over string characters: 
