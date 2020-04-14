@@ -231,7 +231,7 @@ public static <T extends Comparable<? super T>> Comparator<T> reverseOrder() {
     return Collections.reverseOrder();
 }
 ```
-There is a small note about type safety, which prefers Collections.reverseOrder(). See (the comment here)[https://stackoverflow.com/a/61178603/3769451].
+There is a small note about type safety, which prefers Collections.reverseOrder(). See [the comment here](https://stackoverflow.com/a/61178603/3769451).
 
 ### Comparator<? super T>
 Meaning anything super type of T. 
