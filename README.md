@@ -169,7 +169,9 @@ public int hashCode() {
 [source for JDK 7+](https://mkyong.com/java/java-how-to-overrides-equals-and-hashcode/)
 
 ### iterable, iterator: 
-Interfaces.   Iterable (introduced java 1.5), Iterator (introduced java 1.2).  
+Interfaces.   Iterable (introduced java 1.5), Iterator (introduced java 1.2). 
+
+The iterator implementation in Java is just an inner class that implements the iterator interface. (It can be also another outside class, but has no usage, so there is no point to create a separate class). 
 
 As explained [here](https://www.java-success.com/%E2%99%A5-java-iterable-vs-iterator-differences-and-know-how/), The “Iterable” was introduced to be able to use in the foreach loop. A class implementing the Iterable interface can be iterated over.
 
