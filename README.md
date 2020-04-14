@@ -29,7 +29,19 @@ String[][] names = {
 Init List: 
 ```
 List<String> strings = Arrays.asList("foo", "bar", "baz");
+List<Integer> ints = Arrays.asList(1, 2, 3);
 ```
+
+### convert int[] to List<Integers>
+There is no direct way to make the conversion.  
+The best way is to use something like this:
+```
+  
+List<Integer> list = Arrays.stream(arr)
+                                .boxed()        // Stream<Integer>
+                                .collect(Collectors.toList());  
+```
+
 ### print array: 
 ```
 String[] array = new String[] {"John", "Mary", "Bob"};
