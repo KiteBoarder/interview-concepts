@@ -171,7 +171,7 @@ public int hashCode() {
 ### iterable, iterator: 
 Interfaces.   Iterable (introduced java 1.5), Iterator (introduced java 1.2).  
 
-As explained (here)[https://www.java-success.com/%E2%99%A5-java-iterable-vs-iterator-differences-and-know-how/], The “Iterable” was introduced to be able to use in the foreach loop. A class implementing the Iterable interface can be iterated over.
+As explained [here](https://www.java-success.com/%E2%99%A5-java-iterable-vs-iterator-differences-and-know-how/), The “Iterable” was introduced to be able to use in the foreach loop. A class implementing the Iterable interface can be iterated over.
 
 ```
 public interface Iterator<E>
