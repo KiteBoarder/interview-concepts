@@ -169,22 +169,22 @@ public int hashCode() {
 [source for JDK 7+](https://mkyong.com/java/java-how-to-overrides-equals-and-hashcode/)
 
 ### iterable, iterator: 
-Interfaces.   Iterable (introduced java ), Iterator (introduced java ). 
-Iterator methods: hasNext(), next(), remove(). remove is optional.  
-Iterable: iterator()
-
+Interfaces.   Iterable (introduced java 1.5), Iterator (introduced java 1.2). 
 ```
 public interface Iterator<E>
 {
     boolean hasNext();
     E next();
-    void remove();
+    void remove(); //optional
 }
 ```
 ```
 public interface Iterable<T>
 {
     Iterator<T> iterator();
+    
+    // In java 8:
+    default void forEach(Consumer<? super T> action);
 }
 ```
 
