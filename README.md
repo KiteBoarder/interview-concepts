@@ -200,15 +200,38 @@ public interface Iterable<T>
 
 A comparable object is capable of comparing itself with another object. The class itself must implements the java.lang.Comparable interface in order to be able to compare its instances.
 
-method: int compareTo(T o)
+method: `int compareTo(T o)`
 
 **Comparator**
 
 A comparator object is capable of comparing two different objects. The class is not comparing its instances, but some other class’s instances. This comparator class must implement the java.util.Comparator interface.
 
-method: int compare(T o1, T o2)
+method: `int compare(T o1, T o2)`
 
 It also has many comparators such as: naturalOrder(), reverseOrder(). 
+
+### Collections.reverseOrder vs Comparator.reverseOrder(): 
+They are the same. 
+```
+     public static void main(String[] args) {
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(2, 1, 3));
+        list1.sort(Collections.reverseOrder());
+        System.out.println(list1); // prints [3, 2, 1]
+
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(2, 1, 3));
+        list2.sort(Comparator.reverseOrder());
+        System.out.println(list2); // prints [3, 2, 1]
+
+    }
+```
+
+Under the hood: 
+```
+public static <T extends Comparable<? super T>> Comparator<T> reverseOrder() {
+    return Collections.reverseOrder();
+}
+```
+There is a small note about type safety, which prefers Collections.reverseOrder(). See (the comment here)[https://stackoverflow.com/a/61178603/3769451].
 
 ### Comparator<? super T>
 Meaning anything super type of T. 
