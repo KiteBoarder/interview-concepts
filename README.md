@@ -173,6 +173,21 @@ Interfaces.   Iterable (introduced java ), Iterator (introduced java ).
 Iterator methods: hasNext(), next(), remove(). remove is optional.  
 Iterable: iterator()
 
+```
+public interface Iterator<E>
+{
+    boolean hasNext();
+    E next();
+    void remove();
+}
+```
+```
+public interface Iterable<T>
+{
+    Iterator<T> iterator();
+}
+```
+
 ### Comparator<? super T>
 Meaning anything super type of T. 
 
