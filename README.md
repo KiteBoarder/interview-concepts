@@ -195,10 +195,28 @@ public interface Iterable<T>
 
 [Sample Iterator](./Java/IteratorTest.java)
 
+### Comparator vs Comparable: 
+**Comparable**
+
+A comparable object is capable of comparing itself with another object. The class itself must implements the java.lang.Comparable interface in order to be able to compare its instances.
+
+method: int compareTo(T o)
+
+**Comparator**
+
+A comparator object is capable of comparing two different objects. The class is not comparing its instances, but some other class’s instances. This comparator class must implement the java.util.Comparator interface.
+
+method: int compare(T o1, T o2)
+
+It also has many comparators such as: naturalOrder(), reverseOrder(). 
+
 ### Comparator<? super T>
 Meaning anything super type of T. 
 
 This follows the PECS mnemonic: "Producer Extends, Consumer Super", which means that producers of things should work with things that have an upper bound ( ? extends T) and consumers (like comparator implementations that use things) should work with lower bounds ( ? super T). [Link](https://stackoverflow.com/a/13786317/3769451)
+
+Why ? super T:   
+It means T or any super class of T. Consider we are sorting an array of Dogs. As the comparator we can pass an Animal comparator (which for example compares animals based on their weights). 
 
 ### method references (Java 8): 
 ```
