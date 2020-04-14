@@ -170,9 +170,8 @@ public int hashCode() {
 
 ### iterable, iterator: 
 Interfaces.   Iterable (introduced java ), Iterator (introduced java ). 
-Iterator methods: hasNext(), next(). 
+Iterator methods: hasNext(), next(), remove(). remove is optional.  
 Iterable: iterator()
-
 
 ### Comparator<? super T>
 Meaning anything super type of T. 
@@ -229,6 +228,37 @@ Map<String, String> map = ...
 for (Map.Entry<String, String> entry : map.entrySet()) {
     System.out.println(entry.getKey() + "/" + entry.getValue());
 }
+```
+
+### Java8 forEach:
+(Some examples:)[https://mkyong.com/java8/java-8-foreach-examples/]
+```
+//Map:
+  items.forEach((k,v)->System.out.println("Item : " + k + " Count : " + v));
+	
+	items.forEach((k,v)->{
+		System.out.println("Item : " + k + " Count : " + v);
+		if("E".equals(k)){
+			System.out.println("Hello E");
+		}
+	});
+  
+// List: 
+	items.forEach(item->System.out.println(item));
+		
+	items.forEach(item->{
+		if("C".equals(item)){
+			System.out.println(item);
+		}
+	});
+		
+	//method reference
+	items.forEach(System.out::println);
+	
+	//Stream and filter
+	items.stream()
+		.filter(s->s.contains("B"))
+		.forEach(System.out::println);
 ```
 
 #### Arrays as keys
