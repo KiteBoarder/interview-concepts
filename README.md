@@ -124,6 +124,8 @@ Throwing unchecked exception example:
 throw new RuntimeException("something wrong!"); 
 ```
 
+Example for extending RuntimeException [here](https://www.tutorialspoint.com/how-to-create-a-custom-unchecked-exception-in-java), to create a custom RuntimeException. 
+
 ### Exception: 
 ```
 throw new Exception("test");
