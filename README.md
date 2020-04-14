@@ -198,6 +198,8 @@ public interface Iterable<T>
 ### Comparator<? super T>
 Meaning anything super type of T. 
 
+This follows the PECS mnemonic: "Producer Extends, Consumer Super", which means that producers of things should work with things that have an upper bound ( ? extends T) and consumers (like comparator implementations that use things) should work with lower bounds ( ? super T). [Link](https://stackoverflow.com/a/13786317/3769451)
+
 ### method references (Java 8): 
 ```
 List<String> list = ...;
