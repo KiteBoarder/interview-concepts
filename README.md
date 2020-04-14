@@ -193,6 +193,8 @@ public interface Iterable<T>
 }
 ```
 
+[Sample Iterator](./MaxIntersectingIntervals.java)
+
 ### Comparator<? super T>
 Meaning anything super type of T. 
 
