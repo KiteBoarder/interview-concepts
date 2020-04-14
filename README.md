@@ -157,7 +157,13 @@ public int hashCode() {
 [source for JDK 7+](https://mkyong.com/java/java-how-to-overrides-equals-and-hashcode/)
 
 ### iterable, iterator: 
+Interfaces.   Iterable (introduced java ), Iterator (introduced java ). 
+Iterator methods: hasNext(), next(). 
+Iterable: iterator()
 
+
+### Comparator<? super T>
+Meaning anything super type of T. 
 
 ### method references (Java 8): 
 ```
@@ -197,10 +203,10 @@ Queue exceptions are unchecked, no need for try catch or adding throws to functi
 
 ### Iterate over string characters: 
 ```
-int[] chars = new int[26]; //count all letters
-        for (char c : text.toCharArray()) {
-            chars[c - 'a']++;
-        }
+  int[] chars = new int[26]; //count all letters
+  for (char c : text.toCharArray()) {
+      chars[c - 'a']++;
+  }
 ```
 Also has an example of counting characters using character counter.   
 
