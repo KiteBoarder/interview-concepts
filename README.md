@@ -295,6 +295,8 @@ list.sort() always takes a comparator but can pass null for natural ordering.
 list.sort was introduced in java 8. 
 ```
 list.sort(null); 
+//equivalent to: 
+list.sort(Comparator.naturalOrder());
 ```
 Collections.sort (which was introduced in Java 1.2) can take no argument, or a comparator. 
 ```
