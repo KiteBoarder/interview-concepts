@@ -280,6 +280,16 @@ peek -> peekFirst
 
 Queue exceptions are unchecked, no need for try catch or adding throws to function. 
 
+### sorting
+Arrays.sort, Collections.sort, list.sort
+
+Arrays.sort works with or without comparator. 
+Arrays.sort example:
+```
+String[] words = {"abc", "a", "ac"}; 
+Arrays.sort(words, (a,b) -> a.length() - b.length()); 
+System.out.println(Arrays.toString(words)); // prints [a, ac, abc]
+```
 
 <hr/>
 
