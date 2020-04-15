@@ -291,6 +291,16 @@ Arrays.sort(words, (a,b) -> a.length() - b.length());
 System.out.println(Arrays.toString(words)); // prints [a, ac, abc]
 ```
 
+list.sort() always takes a comparator but can pass null for natural ordering.  
+list.sort was introduced in java 8. 
+```
+list.sort(null); 
+```
+Collections.sort (which was introduced in Java 1.2) can take no argument, or a comparator. 
+```
+Collections.sort(list); 
+```
+
 <hr/>
 
 ## String: 
