@@ -97,7 +97,7 @@ for(int i=0; i<array.length/2; i++){
 
 
 ### binary search:
-Arrays.binarySearch. 
+Arrays.binarySearch, Collections.binarySearch
 ```
 public static int binarySearch(int[] a,
                int key)
