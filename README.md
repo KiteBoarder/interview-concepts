@@ -267,8 +267,7 @@ Comparator<Integer> comp =
                 (a, b) -> Integer.compare(f.apply(a), f.apply(b));
 		
 
-Comparator<Integer> comp =
-                (a, b) -> b - a;		
+Comparator<Integer> comp = (a, b) -> b - a;		
 ```
 
 ### Comparator<? super T>
