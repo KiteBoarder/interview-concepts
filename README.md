@@ -241,6 +241,36 @@ public static <T extends Comparable<? super T>> Comparator<T> reverseOrder() {
 ```
 There is a small note about type safety, which prefers Collections.reverseOrder(). See [the comment here](https://stackoverflow.com/a/61178603/3769451).
 
+### Comparator and lambdas: 
+Example for multiline: 
+```
+    public static void main(String[] args) {
+        Integer[] arr = {1, 3, 4, 5, 9};
+        Function<Integer, Integer> f = x -> x*x;
+        Comparator<Integer> comparator = (o1, o2) -> {
+            o1 = o1 > 0? f.apply(o1) : -o1;
+            o2 = o2 > 0? f.apply(o2) : -o2;
+            return o1 - o2;
+        };
+
+        int result = Arrays.binarySearch(arr, -20, comparator);
+        if (result < 0)
+            result = -result - 1;
+        System.out.printf("index: %d, element: %d", result, arr[result]); // prints index: 3, element: 5
+    }
+```
+Example for one line: 
+```
+Function<Integer, Integer> f = x -> x*x;
+
+Comparator<Integer> comp =
+                (a, b) -> Integer.compare(f.apply(a), f.apply(b));
+		
+
+Comparator<Integer> comp =
+                (a, b) -> b - a;		
+```
+
 ### Comparator<? super T>
 Meaning anything super type of T. 
 
