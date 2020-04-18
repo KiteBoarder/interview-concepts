@@ -565,4 +565,8 @@ problems:
 
 ## Intervals: 
 #### Find gap between intervals: 
-Can sort by start, end, or both start and end. [Here](./Intervals/IntervalGaps.java) is the code. 
+Can sort by start, end, or both start and end. [Here](./Intervals/IntervalGaps.java) is the code.  
+Sort by start, end: have a counter, when counter gets to 0 it's a start of a gap, when counter goes to 1 from 0 it's an end of a gap. 
+
+#### Find maximum number of overlaps at the same time in intervals:
+Sort by start and end and have a counter (+1 for start, -1 for end). Maximum number of overlaps is the max of the counter. 
