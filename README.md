@@ -562,3 +562,7 @@ There are m rows and n cols, and one row and col is common between sweeps, so m 
 ## Arrays:
 problems:  
 [maxium ramp width](https://leetcode.com/problems/maximum-width-ramp) Solution with min stack from start and sweeping from end. 
+
+## Intervals: 
+#### Find gap between intervals: 
+Can sort by start, end, or both start and end. [Here]() is the code. 
