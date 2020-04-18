@@ -412,6 +412,36 @@ PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder());
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a); 
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a)); 
 ```
+### Int pass by reference:
+Use a ref class, or use Atomic integer, (or use array):
+```
+class Ref{
+	int val; 
+}
+...
+	Ref i = new Ref(); 
+	i.val = 2; 
+	
+// Generic case: 
+public class Ref<T>{
+    public T val;
+
+    public Ref(T value)
+    {
+        this.val = val;
+    }
+}
+...
+	Ref<Integer> i = new Ref<>(); 
+	i.val = 2; 
+
+public static <T> void swap(Ref<T> t1, Ref<T> t2){
+        T temp = t1.val;
+        t1.val = t2.val;
+        t2.val = temp;
+}
+```
+
 <hr/>
 
 ## Greedy 
