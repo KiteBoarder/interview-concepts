@@ -627,6 +627,7 @@ Output: [1,2,3,6,9,8,7,4,5]
 ```
 General pattern for spiral matrix:  
 Use top, bottom, left, right.  
+Always work on a **rectangle**. ie don't mix up working on a point that doesn't belong to the current rectangle.  
 In each round narrow the boundries.  
 While condition: as long as top and bottom don't pass each other, same for left and right.  
 The only condition we need to be careful: after printing top row and right column, for square matrix we should be careful for printing bottom and left. So if top and bottom are equal or left and right are equal, we don't need to return over the matrix to print bottom and left.  
