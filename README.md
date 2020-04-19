@@ -532,7 +532,7 @@ https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/
 https://leetcode.com/articles/longest-increasing-subsequence/
 
 ## Grids, matrix
-Print matrix diagonally: 
+#### Print matrix diagonally: 
 ```
 public class MatrixPrint {
 
@@ -588,6 +588,55 @@ Min or Max? Consider the line and flat line, then see if we are choosing the min
 
 i sweeps between 0 and m+n-1. Last i is m + n - 2.  
 There are m rows and n cols, and one row and col is common between sweeps, so m + n - 1.  
+
+#### Spiral Matrix: 
+Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. [leetcode spiral matrix](https://leetcode.com/problems/spiral-matrix/) 
+```
+Input:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+Output: [1,2,3,6,9,8,7,4,5]
+```
+```
+     public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> res = new ArrayList<>(); 
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) 
+            return res; 
+        int left = 0, right = matrix[0].length-1, top = 0, bottom = matrix.length-1; 
+        while(left <= right && bottom >= top){
+            for (int i = left; i <= right; i++)
+                res.add(matrix[top][i]);
+            
+            for (int i = top+1; i <= bottom; i++)
+                res.add(matrix[i][right]);
+            
+            if (top >= bottom || right <= left)
+                break; 
+            
+            for (int i = right-1; i >= left; i--)
+                res.add(matrix[bottom][i]);
+            
+            for (int i = bottom-1; i > top; i--)
+                res.add(matrix[i][left]);
+            
+            top++; right--; bottom--; left++;
+        }
+```
+General pattern for spiral matrix:  
+Use top, bottom, left, right.  
+In each round narrow the boundries.  
+While condition: as long as top and bottom don't pass each other, same for left and right.  
+The only condition we need to be careful: after printing top row and right column, for square matrix we should be careful for printing bottom and left. So if top and bottom are equal or left and right are equal, we don't need to return over the matrix to print bottom and left.  
+With this solution there is no need to track the total number of elements visited.  
+
+#### other versions of spiral matrix: 
+Given a positive integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/).  
+Spiral from inside to outside:  
+[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)
 
 ## Arrays:
 problems:  
