@@ -661,4 +661,4 @@ Insert, delete, getRandom: O(1).
 Data structures: Array (in java ArrayList) and HashMap.   
 Array is used for returning a random element.  
 HashMap is used for insert, delete O(1). value of the hashmap is the index in the array.  
-Tricky part is the remove. Removing the element in the array: swapping the last element and removing last element. Trick is that the element might be the last. Can write the code in a way that doesn't matter whether the element is the last one or not. 
+Tricky part is the remove. Removing the element in the array: swapping the last element and removing last element. Trick is in the part that the element removed might be the last element. Can write the code in a way that doesn't matter whether the element is the last one or not. 
