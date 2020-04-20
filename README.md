@@ -468,6 +468,7 @@ Choose lowest end points: Sort by end point, iterate and pick compatible interva
 quick select has average complexity of O(n), regardless of K.  
 Quick select: find the Kth smallest or largest element.   
 Find median: can be done via quick select in linear time.  
+**Defition of median**: Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 
 ## Tree: 
 
