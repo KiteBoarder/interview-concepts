@@ -477,7 +477,9 @@ pre order cons: using stack, stack normally gets consumed faster than heap.
 Level order is with queue, memory coming from heap so it has more memory available.  
 
 ## LinkedList
-doubly linked list with a dummy head, tail. This way we add, remove nodes between two dummy nodes, but never worry about head, tail being null. 
+
+### Doubly LinkedList:
+doubly linked list with a dummy head and dummy tail. This way we add, remove nodes between two dummy nodes, but never worry about head, tail being null. 
 ``` 
 Node head = new Node(); 
 Node tail = new Node(); 
@@ -496,20 +498,6 @@ public void remove(Node node){
   next.prev = prev; 
 }
 ```
-
-
-## LRU Cache:
-Data structures: Doubly linked list, Map<key, Node>.  
-Doubly linked list has head, tail.  
-```
-class Node{
-  int key, 
-  int value, 
-  Node next; 
-  Node prev; 
-}
-```
-leetcode problem: https://leetcode.com/problems/lru-cache/
 
 ## Sliding window: 
 ### min/max: 
@@ -650,3 +638,27 @@ Sort by start, end: have a counter, when counter gets to 0 it's a start of a gap
 
 #### Find maximum number of overlaps at the same time in intervals:
 Sort by start and end and have a counter (+1 for start, -1 for end). Maximum number of overlaps is the max of the counter. 
+
+<hr/>
+
+## Design questions: 
+### LRU Cache:
+Data structures: Doubly linked list, Map<key, Node>.  
+Doubly linked list has head, tail.  
+```
+class Node{
+  int key, 
+  int value, 
+  Node next; 
+  Node prev; 
+}
+```
+leetcode problem: https://leetcode.com/problems/lru-cache/
+
+### Randomized set:
+leetcode problem: https://leetcode.com/problems/insert-delete-getrandom-o1/
+Insert, delete, getRandom: O(1).  
+Data structures: Array (in java ArrayList) and HashMap.   
+Array is used for returning a random element.  
+HashMap is used for insert, delete O(1). value of the hashmap is the index in the array.  
+Tricky part is the remove. Removing the element in the array: swapping the last element and removing last element. Trick is that the element might be the last. Can write the code in a way that doesn't matter whether the element is the last one or not. 
