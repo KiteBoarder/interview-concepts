@@ -644,7 +644,7 @@ Sort by start and end and have a counter (+1 for start, -1 for end). Maximum num
 
 ## Design questions: 
 ### LRU Cache:
-Data structures: Doubly linked list, Map<key, Node>.  
+Data structures: Doubly linked list, Map<key, Node>. Or use Java LinkedHashMap.
 Doubly linked list has head, tail.  
 ```
 class Node{
