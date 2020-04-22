@@ -110,6 +110,14 @@ public static int binarySearch(int[] a,
 Returns:  
 index of the search key, if it is contained in the array within the specified range; otherwise, (-(insertion point) - 1). The insertion point is defined as the point at which the key would be inserted into the array: the index of the first element in the range greater than the key, or toIndex if all elements in the range are less than the specified key. Note that this guarantees that the return value will be >= 0 if and only if the key is found.
 
+
+### dedup list using set: 
+```
+	List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 2, 2));
+        List<Integer> dedup = new ArrayList<>(new HashSet<>(list));
+        System.out.println(dedup); // will print [1, 2, 3]
+```
+
 <hr/>
 
 ### checked, unchecked exceptions: 
