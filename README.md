@@ -3,6 +3,7 @@
 ### todo: graph 4 different ways, dijkstra, A*, spanning tree
 ### todo: create unchecked exception, iterator, iterable, comparator, priority queue(orders)
 ### todo: streams (Java 8)
+### todo: enums
 
 
 # Java: 
