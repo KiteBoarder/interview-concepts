@@ -4,7 +4,7 @@
 ### todo: create unchecked exception, iterator, iterable, comparator, priority queue(orders)
 ### todo: streams (Java 8)
 ### todo: enums
-### todo: list remove with iterator(is that the only way)? 
+### todo: list remove with iterator(is that the only way: no remove from end to start is one option too, removeAll is another optionn)? 
 
 
 
