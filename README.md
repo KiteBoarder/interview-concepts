@@ -3,7 +3,6 @@
 ### todo: graph 4 different ways, dijkstra, A*, spanning tree
 ### todo: create unchecked exception, iterator, iterable, comparator, priority queue(orders)
 ### todo: streams (Java 8)
-### todo: enums
 ### todo: list remove with iterator(is that the only way: no remove from end to start is one option too, removeAll is another optionn)? 
 
 
@@ -344,6 +343,41 @@ Collections.sort (which was introduced in Java 1.2) can take no argument, or a c
 Collections.sort(list); 
 ```
 
+### enum: 
+```
+public enum Level {
+    HIGH,
+    MEDIUM,
+    LOW
+}
+```
+```
+Level level = Level.HIGH;
+if( level == Level.HIGH) {
+
+} else if( level == Level.MEDIUM) {
+
+} else if( level == Level.LOW) {
+
+}
+```
+```
+Level level = ...  //assign some Level constant to it
+
+switch (level) {
+    case HIGH   : ...; break;
+    case MEDIUM : ...; break;
+    case LOW    : ...; break;
+}
+```
+```
+for (Level level : Level.values()) {
+    System.out.println(level);
+}
+// HIGH
+// MEDIUM
+// LOW
+```
 <hr/>
 
 ## String: 
