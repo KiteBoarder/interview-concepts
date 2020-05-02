@@ -310,7 +310,7 @@ throw exception: add, remove, element
 return special value: offer (boolean for capacity violation), poll(return null if empty), peek (return null if empty) 
 
 Deque methods:
-throw exception: addFirst, removeFirst, getFirst, addLast, removeLasat, getLast  
+throw exception: addFirst, removeFirst, getFirst, addLast, removeLast, getLast  
 Special value: offerFirst, pollFirst, peekFirst, offerLast, pollLast, peekLast   
 
 Deque equivalent queue methods:
