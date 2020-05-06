@@ -400,6 +400,18 @@ for (Map.Entry<String, String> entry : map.entrySet()) {
 }
 ```
 
+## Treemap: 
+Sorted keyset. TreeMap, which is an implementation of the SortedMap interface. It presents its keys in sorted order.
+```
+Map<String, Object> map = new TreeMap<String, Object>();
+/* Add entries to the map in any order. */
+...
+/* Now, iterate over the map's contents, sorted by key. */
+for (Map.Entry<String, ?> entry : map.entrySet()) {
+  System.out.println(entry.getKey() + ": " + entry.getValue());
+}
+```
+
 ### Java8 forEach:
 (Some examples:)[https://mkyong.com/java8/java-8-foreach-examples/]
 ```
