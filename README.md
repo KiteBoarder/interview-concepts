@@ -391,6 +391,14 @@ for (Level level : Level.values()) {
 ```
 Also has an example of counting characters using character counter.   
 
+Another way for counting string characters:
+```
+	int[] map = new int[256];
+        for(int i=0; i< str.length(); i++){
+            map[t.charAt(i)]++;
+        }
+```
+
 ## java map: 
 #### foreach: 
 ```
