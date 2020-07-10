@@ -586,6 +586,29 @@ good link for explanation of O(nlog(n)):
 https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/  
 https://leetcode.com/articles/longest-increasing-subsequence/
 
+### DP optimizations: 
+- Removing one dimension: When formula for dp[i][j] depends only on the same row and column, ie no diagonal, storage can be optimized. One dimension can be removed.   
+Example: https://leetcode.com/problems/coin-change-2/
+
+```
+class Solution {
+    
+    //formula: f[i][amount] = find(amount - coins[i], i) + find(amount, i-1)
+        
+    public int change(int amount, int[] coins) {
+        int[] dp = new int[amount + 1];
+            dp[0] = 1;   
+        
+        for (int coin : coins){
+            for (int j = coin; j <= amount; j++){            
+                dp[j] += dp[j - coin]; 
+            }
+        }
+        return dp[amount]; 
+    }
+}
+```
+
 ## Grids, matrix
 #### Print matrix diagonally: 
 ```
