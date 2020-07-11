@@ -587,7 +587,7 @@ https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/
 https://leetcode.com/articles/longest-increasing-subsequence/
 
 ### DP optimizations: 
-- Removing one dimension: When formula for dp[i][j] depends only on the same row and column, ie no diagonal, storage can be optimized. One dimension can be removed.   
+- Removing one dimension: When formula for dp[i][j] depends only on the same row and column (and one of them is the row before or after), ie no diagonal, storage can be optimized. One dimension can be removed.   
 Example: https://leetcode.com/problems/coin-change-2/
 
 ```
