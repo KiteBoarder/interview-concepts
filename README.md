@@ -581,6 +581,11 @@ problems:
 [shortest subarray with sum at least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)
 
 ## DP
+
+### Memoization to DP: 
+write recursion first, then convert to memoization, then dp.   
+converting memoization to dp: find function (recursive function) can be used to access the dp array, and memoization base cases can be put in the find function, so base case for array initilaiztion is not needed, and array doesn't need to be one size larger for base case.  
+
 ### LIS:
 good link for explanation of O(nlog(n)):  
 https://algorithmsandme.com/longest-increasing-subsequence-in-onlogn/  
