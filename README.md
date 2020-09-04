@@ -736,6 +736,11 @@ Sort by start and end and have a counter (+1 for start, -1 for end). Maximum num
 
 <hr/>
 
+## Binary search tree (BST): 
+### Traversal:
+Traversal is always iterative.   
+In traversal, [left, right] starts from [-inf, inf] and it always shrinks toward the target. So if going right, left will shrink. Going left, right bound will shrink. 
+
 ## Design questions: 
 ### LRU Cache:
 Data structures: Doubly linked list, Map<key, Node>. Or use Java LinkedHashMap.
@@ -757,3 +762,5 @@ Data structures: Array (in java ArrayList) and HashMap.
 Array is used for returning a random element.  
 HashMap is used for insert, delete O(1). value of the hashmap is the index in the array.  
 Tricky part is the remove. Removing the element in the array: swapping the last element and removing last element. Trick is in the part that the element removed might be the last element. Can write the code in a way that doesn't matter whether the element is the last one or not. 
+
+
